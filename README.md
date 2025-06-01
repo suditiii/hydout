@@ -1,7 +1,8 @@
 HydOut – Curated Outings & Events Platform for Hyderabad
 HydOut is a web-based platform developed using PHP and MySQL, designed to help users discover and book local hangout spots, events, and curated experiences across Hyderabad. With a focus on simplicity, functionality, and user experience, HydOut offers a seamless interface to explore the city with ease.
 
-Features
+Features:
+
 -Curated listings for restaurants, events, and activity spots
 
 -Smart search with filters by category, budget, and ambience
@@ -14,7 +15,8 @@ Features
 
 -Responsive, user-friendly design
 
-Tech Stack
+Tech Stack:
+
 Frontend: HTML5, CSS3, JavaScript
 
 Backend: PHP
