@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydOut - Sign In/Up</title>
+    <link rel="stylesheet" href="firststyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gloock:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!-- Font for HydOut logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <style>
+        input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    margin: 10px -15px;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1 style="font-family: 'Emilys Candy', cursive;">HydOut</h1>
+        </div>
+    </header>
+
+    <div class="background-video">
+        <video autoplay muted loop>
+            <source src="hydbg.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    
+
+    <div class="video-text">
+        <h2>Discover the Best Spots in Hyderabad</h2>
+        <p>Experience it all with HydOut,tailor your perfect day out.</p>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <div class="form-box" id="signInBox">
+                <h2>Sign In</h2>
+                <form action="signin.php" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="password" name="password" required minlength="6"  placeholder="Enter your password" required>
+                    <button type="submit">Sign In</button>
+                    <p>New to HydOut? <a href="#" id="toggleForm">Sign Up</a></p>
+                </form>
+            </div>
+
+            <div class="form-box hidden" id="signUpBox">
+                <h2>Create an Account</h2>
+                <form action="signup.php" method="POST">
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="password" name="password" required minlength="6" placeholder="Password" required>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    <button type="submit">Sign Up</button>
+                    <p>Already have an account? <a href="#" id="toggleFormBack">Sign In</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signUpBox = document.getElementById('signUpBox');
+        const signInBox = document.getElementById('signInBox');
+        document.getElementById('toggleForm').onclick = function() {
+            signUpBox.classList.remove('hidden');
+            signInBox.classList.add('hidden');
+        };
+        document.getElementById('toggleFormBack').onclick = function() {
+            signUpBox.classList.add('hidden');
+            signInBox.classList.remove('hidden');
+        };
+    </script>
+
+</body>
+</html>

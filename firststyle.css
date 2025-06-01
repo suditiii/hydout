@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Gloock', serif; /* New posher font */
+    background-color: #0A3E8C; /* Darker blue */
+    color: #FFD700; /* Gold */
+}
+
+/* Background Video */
+.background-video {
+    position: absolute;
+    top: 80px; /* Push it below the header */
+    right:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Behind header and form */
+    overflow: hidden;
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay for background effect */
+.overlay {
+    position: fixed;
+    top: 80px; /* Start the overlay from beneath the header */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Increased transparency */
+    z-index: 0;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(10, 62, 140, 0.9); /* Slight transparency */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #FFD700; /* Gold line for emphasis */
+}
+
+header h1 {
+    font-family: 'Great Vibes', serif; /* Custom logo font */
+    color: #FFD700; /* Gold */
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+/* Video Text */
+.video-text {
+    position: absolute;
+    top: 25%;
+    left: 5%; /* Aligned left */
+    color: #FFD700;
+    z-index: 1;
+    max-width: 40%;
+}
+
+.video-text h2 {
+    font-size: 4rem; /* Big text */
+    font-weight: 700;
+    text-align: left;
+}
+
+.video-text p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-align: left;
+    color: #0A3E8C;
+}
+
+/* Form Container */
+.container {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center;
+    height: 100vh;
+    padding-top: 100px; /* Space below the header */
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 1); /* Solid white background */
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    align-items: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    margin-right: 20%; /* Moved the form box to the left */
+    
+}
+
+.form-box {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Gloock', serif;
+    color: #0A3E8C;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    margin: 20px -14px;
+}
+
+button {
+    width: 100%;
+    background-color: #FFD700;
+    color: #0A3E8C;
+    border: none;
+    padding: 15px;
+    font-family: 'Gloock', serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0A3E8C;
+    color: #FFD700;
+}
+
+p {
+    margin-top: 20px;
+    color: #0A3E8C;
+}
+
+a {
+    color: #0A3E8C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Form transition effects */
+input, button {
+    transition: all 0.3s ease;
+}
